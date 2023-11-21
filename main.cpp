@@ -7,7 +7,8 @@ int main(){
     B* classB = new B(classC);
     A* classA = new A(classB);
 
-    printf("%p", classC);
+    printf("%d\n", classC->m_VideoStats);
+    //printf("%p", classC);
     classA->threadFunction();
 
     return 0;

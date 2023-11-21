@@ -6,9 +6,9 @@ B::B(C* classC){
 }
 
 void B::printC(){
-    int x = class_c->m_VideoStats;
-    printf("%d", x);
-    printf("%p", class_c);
+    
+    printf("%d", class_c->m_VideoStats);
+    //printf("%p", class_c);
 }
 
 

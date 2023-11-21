@@ -4,6 +4,11 @@ A::A(B* classB){
     class_B = classB;
 }
 
-void threadFunction(){
-    std::thread threadProcThunk(&B::printC);
+void A::intermediateThreading(){
+    class_B->printC();
+}
+
+void A::threadFunction(){
+    std::thread threadProcThunk(&A::intermediateThreading, this);
+    threadProcThunk.join();
 }
