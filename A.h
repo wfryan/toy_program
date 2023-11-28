@@ -6,7 +6,7 @@ class A{
     public:
         A(B* classB);
         void threadFunction();
-        void intermediateThreading();
+        
 
     private:
         B* class_B;

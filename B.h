@@ -1,11 +1,12 @@
-#include "C.h"
+#include "D.h"
 #include <thread>
 
 class B{
     
     public:
-        B(C* classC);
-        void printC();
+        B(PVIDEO_STATS m_videoStats);
+        static void intermediateThreading(void* context);
+        void printStats();
     private:
-        C* class_c;
+        PVIDEO_STATS m_VideoStats;
 };

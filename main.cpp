@@ -3,12 +3,17 @@
 #include <iostream>
 
 int main(){
-    C* classC = new C(12);
-    B* classB = new B(classC);
-    A* classA = new A(classB);
 
-    printf("%d\n", classC->m_VideoStats);
-    //printf("%p", classC);
+    VIDEO_STATS pStats;
+    pStats.testStat = 10;
+
+    B* classB = new B(&pStats);
+    A* classA = new A(classB);
+    printf("pointer of m_videoStats: %p", &pStats);
+
+    printf("%u\n", pStats.testStat);
+    //int *ptr = &classC->m_VideoStats;
+    //printf("%p\n\n", ptr);
     classA->threadFunction();
 
     return 0;
