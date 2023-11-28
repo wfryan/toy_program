@@ -9,8 +9,7 @@ int main(){
 
     B* classB = new B(&pStats);
     A* classA = new A(classB);
-    printf("pointer of m_videoStats: %p", &pStats);
-
+    printf("pointer of m_videoStats: %p\n", &pStats);
     printf("%u\n", pStats.testStat);
     //int *ptr = &classC->m_VideoStats;
     //printf("%p\n\n", ptr);

@@ -4,7 +4,7 @@ LDFLAGS =
 
 SRC_DIR = .
 BUILD_DIR = build
-EXE = my_program
+EXE = toy_program
 
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))

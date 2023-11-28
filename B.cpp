@@ -11,7 +11,7 @@ void B::intermediateThreading(void* context){
 }
 
 void B::printStats(){
-    printf("pointer of m_videoStats: %p", m_VideoStats);
+    printf("pointer of m_videoStats: %p\n", m_VideoStats);
     uint32_t testInt = m_VideoStats->testStat;
     printf("%u\n",testInt);
     //int *ptr = &class_c->m_VideoStats;
